@@ -7,3 +7,37 @@
 h1 {
     color: blue;
 }
+
+.boutonNouvelleTache {
+    background-color: aquamarine;
+
+}
+
+.fenetreDeSaisie {     
+    position : fixed;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+    padding : 20px;
+    background-color : blue;
+    border : 1px solid #ccc;
+    height: 300px;
+    width: 250px;
+}
+
+/* Style pour le conteneur de la liste des tâches */
+#grillePourListe {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Crée des colonnes flexibles */
+    gap: 20px; /* Espacement entre les éléments */
+    margin: 20px; /* Marges autour de la grille */
+}
+
+/* Style pour chaque tâche */
+.cellule {
+    background-color: #f9f9f9; /* Couleur de fond des tâches */
+    border: 1px solid #ccc; /* Bordure autour des tâches */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 15px; /* Espacement interne */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
