@@ -5,25 +5,98 @@
 }
 
 h1 {
-    color: blue;
+    color: rgb(12, 12, 243);
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+
+
+.logo{
+    align-items: center; 
+    display: block;
+    margin: auto;
+       
 }
 
 .boutonNouvelleTache {
-    background-color: aquamarine;
+    display: flex;
+    background-color: rgb(173, 247, 222);
+    position: absolute  ;
+        bottom: 10px;
+        right: 10px;
+    height: 100px;
+    width: 200px;
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .fenetreDeSaisie {     
     position : fixed;
-    top : 50%;
+    top : 70%;
     left : 50%;
     transform : translate(-50%, -50%);
     padding : 20px;
-    background-color : blue;
+    background-color : rgb(175, 175, 252);
     border : 1px solid #ccc;
-    height: 300px;
-    width: 250px;
+    height: 250px;
+    width: 350px;
+    z-index: 1000; 
 }
+
+.emplacementListe {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.entete {
+    background-color: rgb(184, 253, 253);
+}
+
+.colonneTitre{
+    border :1px solid black; 
+    padding : 5px;
+    margin : 5px;
+    width: 150px;
+    position: relative;
+}
+
+.colonneDescription{
+    border :1px solid black; 
+    padding : 5px;
+    margin : 5px;
+    width: 400px;
+    position: relative;
+}
+
+.colonneDateEcheance{
+    border :1px solid black; 
+    padding : 5px;
+    margin : 5px;
+    width: 200px;
+    position: relative  ;
+}
+
+.icone {
+    height: 50px;
+}
+
+
 
 /* Style pour le conteneur de la liste des tâches */
 #grillePourListe {
@@ -41,3 +114,4 @@ h1 {
     padding: 15px; /* Espacement interne */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
+
