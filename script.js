@@ -1,12 +1,10 @@
 //Création un tableau d'objet à l'aide de la méthode constructeur
-// Le tableau sera ensuite affiché dans une table avec en colonne supplémentaire le check de la tâche terminée ainsi que la modification de la tâche et également sa suppression
-
 
 // Déclaration des variables temporelles
-let dateduJour = new Date();
+/* let dateduJour = new Date();
 let specificDate = new Date('2024-10-30'); // Date spécifique
 console.log(dateduJour)
-
+ */
 
 // Logo et Titre de l'application
 let logo = document.createElement('img');
@@ -322,10 +320,12 @@ function affichageListeDesTaches() {
         // Création d'une checkbox pour marquer la tâche comme terminée
         let caseAcocherPourTacheTermine = document.createElement('input');
         caseAcocherPourTacheTermine.type = 'checkbox';
+        caseAcocherPourTacheTermine.title = "tâche terminée";
         caseAcocherPourTacheTermine.checked = item.tacheTerminee;
         caseAcocherPourTacheTermine.classList.add('caseAcocherPourTacheTermine');
         caseAcocherPourTacheTermine.addEventListener('change', function() {
             item.tacheTerminee = caseAcocherPourTacheTermine.checked;
+            item.tacheTerminee.classList.add('checkvisu');
             affichageListeDesTaches();  // pour maj
         });
 
